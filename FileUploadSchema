@@ -1,0 +1,43 @@
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
+
+const fileupload = new Schema({
+  name: {
+    type: String,
+    required: true,
+  },
+  size: {
+    type: Number,
+  },
+  url: {
+    type: String,
+  },
+  type: {
+    type: String,
+  },
+
+  DrName: {
+    type: String,
+  },
+  Qualification: {
+    type: String,
+  },
+  Specalization: {
+    type: String,
+  },
+  Experiance: {
+    type: Number,
+  },
+  Fees: {
+    type: String,
+  },
+  About: {
+    type: String,
+  },
+  clinic: {
+    type: Schema.Types.ObjectId,
+    ref: "clinic",
+  },
+});
+
+module.exports = mongoose.model("file", fileupload);
