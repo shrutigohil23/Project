@@ -1,0 +1,409 @@
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+   /* background-image: url(https://e0.pxfuel.com/wallpapers/760/222/desktop-wallpaper-amazing-ultra-doctors-background-medical-background-health.jpg);  */
+}
+body {
+  background-color: #dee9ff;
+}
+
+.registration-form {
+  padding: 50px 0;
+  background-image: url(https://e0.pxfuel.com/wallpapers/760/222/desktop-wallpaper-amazing-ultra-doctors-background-medical-background-health.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.registration-form form {
+  background-color: #fff;
+  max-width: 600px;
+  margin: auto;
+  padding: 50px 70px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.registration-form .form-icon {
+  text-align: center;
+  background-color: #5891ff;
+  border-radius: 50%;
+  font-size: 40px;
+  color: white;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  margin-bottom: 50px;
+  line-height: 100px;
+}
+
+.registration-form .item {
+  border-radius: 20px;
+  margin-bottom: 25px;
+  padding: 10px 20px;
+}
+
+.registration-form .create-account {
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #5791ff;
+  border: none;
+  color: white;
+  margin-top: 20px;
+}
+
+.registration-form .social-media {
+  max-width: 600px;
+  background-color: #fff;
+  margin: auto;
+  padding: 35px 0;
+  text-align: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: #9fadca;
+  border-top: 1px solid #dee9ff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.registration-form .social-icons {
+  margin-top: 30px;
+  margin-bottom: 16px;
+}
+
+.registration-form .social-icons a {
+  font-size: 23px;
+  margin: 0 3px;
+  color: #5691ff;
+  border: 1px solid;
+  border-radius: 50%;
+  width: 45px;
+  display: inline-block;
+  height: 45px;
+  text-align: center;
+  background-color: #fff;
+  line-height: 45px;
+}
+
+.registration-form .social-icons a:hover {
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+@media (max-width: 576px) {
+  .registration-form form {
+    padding: 50px 20px;
+  }
+
+  .registration-form .form-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    line-height: 70px;
+  }
+}
+
+/* Login page styles */
+.login-page {
+  width: 400px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #35c3c3;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,
+.form button:active,
+.form button:focus {
+  background: #43a047;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #261892;
+  text-decoration: none;
+}
+.client {
+  overflow-x: hidden;
+  height: 100%;
+  background-image: url("https://i.imgur.com/GMmCQHC.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.card {
+  padding: 30px 40px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border: none !important;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+}
+.blue-text {
+  color: #00bcd4;
+}
+.form-control-label {
+  margin-bottom: 0;
+}
+input,
+textarea,
+button {
+  padding: 8px 15px;
+  border-radius: 5px !important;
+  margin: 5px 0px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  font-size: 18px !important;
+  font-weight: 300;
+}
+input:focus,
+textarea:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 1px solid #00bcd4;
+  outline-width: 0;
+  font-weight: 400;
+}
+.btn-block {
+  text-transform: uppercase;
+  font-size: 15px !important;
+  font-weight: 400;
+  height: 43px;
+  cursor: pointer;
+}
+.btn-block:hover {
+  color: #fff !important;
+}
+button:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  outline-width: 0;
+}
+
+.breadcrumb-bar {
+  background-color: #15558d;
+  padding: 15px 0;
+}
+.container-fluid {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.breadcrumb-bar {
+  background-color: #15558d;
+  padding: 15px 0;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+.breadcrumb-title {
+  color: white;
+  padding-right: 1500px;
+}
+.breadcrumb-item {
+  color: white;
+}
+.position.style {
+  position: sticky;
+  top: 20px;
+}
+.profile-sidebar {
+  background-color: #fff;
+  /* border: 1px solid #f0f0f0; */
+  border-radius: 4px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  padding-right: 1200px;
+  text-align: center;
+
+  /* box-sizing: border-box; */
+}
+.widget-profile {
+  background-color: #fff;
+  border-bottom: 1px solid #f0f0f0;
+}
+.widget-profile .profile-info-widget {
+  display: block;
+  text-align: center;
+}
+.booking-doc-img {
+  display: inline-block;
+  margin: 0 0 15px;
+  width: auto;
+  padding: 8px;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+}
+.profile-det-info {
+  overflow: hidden;
+}
+.dashboard-menu.nav .nav-item {
+  width: 100%;
+  border-bottom: 1px solid #f0f0f0;
+}
+.dashboard-menu.nav a.active {
+  color: #0de0fe;
+}
+.dashboard-menu.nav a i {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 15px;
+}
+.dashboard-menu.nav a {
+  color: #757575;
+  display: block;
+  padding: 16px 20px;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+}
+.cent {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 500px;
+}
+.card h-100 {
+  width: 20px;
+}
+.col-md-4 d-flex flex-column align-items-center {
+  width: 20px;
+}
+img-fluid {
+  width: 65%;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-md-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.search-doctor {
+  margin: auto;
+}
+.search-area {
+  background: #ffffff6b;
+  padding: 60px 30px;
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  max-width: 410px;
+  margin: auto;
+}
+.search-area h2 {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.text-center {
+  text-align: center !important;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+.doctor-img {
+  /* background-image: url("https://media.istockphoto.com/id/1189304032/photo/doctor-holding-digital-tablet-at-meeting-room.jpg?s=612x612&w=0&k=20&c=RtQn8w_vhzGYbflSa1B5ea9Ji70O8wHpSgGBSh0anUg="); */
+  background-size: cover;
+}
+.widget-profile.pat-widget-profile .profile-info-widget .booking-doc-img img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.col-lg-8 {
+  -ms-flex: 0 0 66.666667%;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+.row.row-grid {
+  margin-left: -8px;
+  margin-right: -8px;
+  break-after: always;
+}
+.row.row-grid > div {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.widget-profile {
+  background-color: #fff;
+  border-bottom: 1px solid #f0f0f0;
+}
+.card {
+  border: 1px solid #f0f0f0;
+  margin-bottom: 1.875rem;
+}
+.card-body {
+  padding: 1.5rem;
+}
+.ptimage {
+   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpm5BjAHz6neINYJPNYxtbyX7WIAyy609ev2y1boUBUyuIippNoRKY0qsVfJTX7cGNqFA&usqp=CAU"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
