@@ -1,49 +1,23 @@
 import React from "react";
 import axios from "axios";
 import { useForm } from "react-hook-form";
-import { useState, useEffect } from "react";
+import { TimePicker } from "antd";
 
-export const Appointment = () => {
+export const Clinic = () => {
   const { register, handleSubmit } = useForm();
-   
-   const [clinic, setclinic] = useState();
-   const [doctor, setdoctor] = useState();
-
   const submit = (data) => {
     axios
-      .post("http://localhost:4000/appointment/appointment", data)
+      .post("http://localhost:4000/clinic/addclinic", data)
       .then((res) => {
         if (res.data.data) {
           console.log(res.data.data);
-        
-          alert("appointment added Succeessfully........");
+          alert("Clinic added Succeessfully........");
         }
       })
       .catch((err) => {
         console.log(err);
       });
   };
-   useEffect(() => {
-     getclinic();
-   }, []);
-
-   useEffect(() => {
-     getdoctor();
-   }, []);
-
-   const getclinic = () => {
-     axios.get("http://localhost:4000/clinic/getclinic").then((res) => {
-       console.log(res.data.data)
-      setclinic(res.data.data);
-     });
-   };
-
-   const getdoctor = () => {
-     axios.get("http://localhost:4000/file/getdata").then((res) => {
-       //console.log(res.data.data)
-       setdoctor(res.data.data);
-     });
-   };
 
   return (
     <div>
@@ -52,7 +26,7 @@ export const Appointment = () => {
           <form onSubmit={handleSubmit(submit)}>
             <div className="col-md-7 col-lg-8 col-xl-9">
               <div className="card">
-                <h2>Appointment Form</h2>
+                <h2>Clinic Form</h2>
                 <div className="card-body-center">
                   <div className="row form-row">
                     <div className="col-md-12">
@@ -65,36 +39,36 @@ export const Appointment = () => {
                     <div className="col-md-6">
                       <div className="form-group">
                         <label>
-                          PatientName <span className="text-danger">*</span>
+                          Clinic Name <span className="text-danger">*</span>
                         </label>
                         <input
                           type="text"
                           className="form-control"
-                          {...register("patientname")}
+                          {...register("clinicName")}
                         />
                       </div>
                     </div>
                     <div className="col-md-6">
                       <div className="form-group">
                         <label>
-                          Age <span className="text-danger">*</span>
+                          Address <span className="text-danger">*</span>
                         </label>
                         <input
                           type="text"
                           className="form-control"
-                          {...register("age")}
+                          {...register("Address")}
                         />
                       </div>
                     </div>
                     <div className="col-md-6">
                       <div className="form-group">
                         <label>
-                          Date <span className="text-danger">*</span>
+                          Phone Num <span className="text-danger">*</span>
                         </label>
                         <input
                           type="text"
                           className="form-control"
-                          {...register("date")}
+                          {...register("PhoneNum")}
                         />
                       </div>
                     </div>
@@ -106,56 +80,48 @@ export const Appointment = () => {
                         <input
                           type="text"
                           className="form-control"
-                          {...register("time")}
+                          {...register("Timing")}
                         />
                       </div>
                     </div>
+
                     <div className="col-md-6">
                       <div className="form-group">
-                        <label>Reason</label>
+                        <label>About</label>
                         <input
                           type="text"
                           className="form-control"
-                          {...register("reason")}
+                          {...register("About")}
                         />
                       </div>
 
                       <div className="col-md-6">
                         <div className="form-group">
-                          <label>Select Clinic</label>
-
-                          <select {...register("clinic")}>
-                            <option>Select Clinic</option>
-                            {clinic?.map((clinic) => {
-                              return (
-                                <option value={clinic._id}>
-                                  {clinic.clinicName}
-                                </option>
-                              );
-                            })}
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Select State</option>
+                            <option value="1">Gujarat</option>
                           </select>
                         </div>
                       </div>
 
                       <div className="col-md-6">
                         <div className="form-group">
-                          <label>Select Doctor</label>
-
-                          <select {...register("doctor")}>
-                            <option>Select Doctor</option>
-                            {doctor?.map((doctor) => {
-                              return (
-                                <option value={doctor._id}>
-                                  {doctor.DrName}
-                                </option>
-                              );
-                            })}
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Select City</option>
+                            <option value="1">Ahmedabad</option>
+                            <option value="2">Rajkot</option>
+                            <option value="3">Jamnager</option>
                           </select>
                         </div>
                       </div>
-
                       <div>
-                        <input type="submit" value="submit"></input>
+                        <input type="submit" value="SUBMIT"></input>
                       </div>
                     </div>
                   </div>
